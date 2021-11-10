@@ -1,0 +1,31 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Noto+Serif&display=swap');
+
+:root {
+    /* Background gradient */
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+
+    /* Text */
+    --Title-text: hsl(238, 29%, 16%);
+    --Primary-text: hsl(237, 12%, 33%);
+    --Secondary-text: hsl(240, 6%, 50%);
+    --Hover-text: hsl(14, 88%, 65%);
+
+    /* Dividers */
+    --Divider: hsl(240, 5%, 91%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: 'Kumbh Sans',
+        sans-serif;
+}
+
+body {
+    background: hsl(0, 0%, 0%);
+
+}
