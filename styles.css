@@ -7,9 +7,9 @@
   --Soft-blue: hsl(240, 73%, 65%);
 
   /* Text */
-  --Title-text: hsl(238, 29%, 16%);
-  --Primary-text: hsl(237, 12%, 33%);
-  --Secondary-text: hsl(240, 6%, 50%);
+  --Main-text: hsl(238, 29%, 16%);
+  --Secondary-text: hsl(237, 12%, 33%);
+  --Sub-text: hsl(240, 6%, 50%);
   --Hover-text: hsl(14, 88%, 65%);
 
   /* Dividers */
@@ -30,7 +30,7 @@ body {
     var(--Soft-violet) 0%,
     var(--Soft-blue) 100%
   );
-  color: var(--Title-text);
+  color: var(--Mitle-text);
   font-size: 12px;
   font-family: "Kumbh Sans", sans-serif;
 }
@@ -46,9 +46,9 @@ h1 {
   align-self: center;
   position: absolute;
   top: 120px;
-  left: 270px;
+  left: 320px;
   height: 400px;
-  width: 900px;
+  width: 800px;
   background: #fff;
   border-radius: 30px;
 }
@@ -57,13 +57,61 @@ h1 {
   width: 300px;
   position: absolute;
   top: 50px;
-  right: 50px;
+  right: 80px;
+  height: 300px;
+}
+
+.question {
+  position: relative;
+  top: 20px;
+  padding: 8px 0;
+  color: var(--Secondary-text);
+}
+
+.question:hover {
+  color: var(--Hover-text);
+  cursor: pointer;
 }
 
 .arrow {
-  justify-content: flex-end;
+  position: relative;
+  top: 2px;
+  left: 270px;
+  cursor: pointer;
+  width: 3%;
+}
+
+.divider {
+  opacity: 0.2;
+  position: relative;
+  top: 15px;
 }
 
 .answer {
   display: none;
+}
+
+/* Images */
+.pattern {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -290px;
+  right: 390px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  bottom: 180px;
+  right: 480px;
+}
+
+.woman-online {
+  position: absolute;
+  top: -10px;
+  right: 370px;
+  width: 430px;
+  height: 300px;
 }
