@@ -1,16 +1,12 @@
-const answers = document.querySelectorAll(".arrow");
-
-answers.forEach(arrow => {
-  arrow.addEventListener("click", () => {
-    if (arrow.classList.contains("is-open")) {
-      arrow.classList.remove("is-open");
+document.querySelectorAll(".question").forEach(question =>
+  question.addEventListener("click", () => {
+    if (question.parentNode.classList.contains("active")) {
+      question.parentNode.classList.toggle("active");
     } else {
-      const answersIsOpen = document.querySelectorAll(".is-open");
-
-      answersIsOpen.forEach(answersIsOpen => {
-        answersIsOpen.classList.remove(".is-open");
-      });
-      arrow.classList.add(".is-open");
+      document
+        .querySelectorAll(".question")
+        .forEach(question => question.parentNode.classList.remove("active"));
+      question.parentNode.classList.add("active");
     }
-  });
-});
+  })
+);
