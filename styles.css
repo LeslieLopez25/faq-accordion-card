@@ -17,24 +17,25 @@
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-  width: 100vw;
-  height: 100vh;
   background-image: linear-gradient(var(--Soft-violet) 0%,
       var(--Soft-blue) 100%);
-  color: var(--Mitle-text);
+  color: var(--Main-text);
+  font-family: "Kumbh Sans",
+    sans-serif;
   font-size: 12px;
-  font-family: "Kumbh Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 2.66rem;
 }
 
 /* main */
@@ -43,37 +44,37 @@ h1 {
   justify-content: center;
   align-self: center;
   position: absolute;
-  top: 100px;
-  left: 320px;
-  height: 450px;
-  width: 800px;
-  background: #fff;
-  border-radius: 30px;
+  background: hsl(0, 0%, 100%);
+  top: 8.33rem;
+  left: 26.66rem;
+  width: 66.66rem;
+  height: 37.5rem;
+  border-radius: 2.5rem;
   overflow: hidden;
   z-index: 1;
 }
 
 .accordion {
-  width: 300px;
   position: absolute;
-  top: 50px;
-  right: 80px;
-  height: 300px;
+  top: 4.16rem;
+  right: 6.66rem;
+  width: 25rem;
+  height: 25rem;
 }
 
-.question {
-  position: relative;
-  top: 20px;
-  padding: 8px 0;
+.accordion .question {
   color: var(--Secondary-text);
+  position: relative;
+  top: 1.66rem;
+  padding: 0.666rem 0;
 }
 
-.question:hover {
+.accordion .question:hover {
   color: var(--Hover-text);
   cursor: pointer;
 }
 
-.active .question {
+.active>.question {
   font-weight: bold;
 }
 
@@ -81,30 +82,30 @@ h1 {
   color: var(--Secondary-text);
 }
 
-.arrow {
+.accordion .arrow {
   position: relative;
-  top: 2px;
-  left: 270px;
-  cursor: pointer;
+  top: 0.166rem;
+  left: 22.5rem;
   width: 3%;
+  cursor: pointer;
 }
 
 .active .arrow {
   transform: rotate(180deg);
 }
 
-.divider {
-  opacity: 0.2;
+.accordion .divider {
   position: relative;
-  top: 15px;
+  top: 1.25rem;
+  opacity: 0.2;
 }
 
 .active .divider {
   position: relative;
-  top: 65px;
+  top: 5.41rem;
 }
 
-.answer {
+.accordion .answer {
   display: none;
 }
 
@@ -114,36 +115,36 @@ h1 {
 
 .active>.answer {
   display: block;
-  position: relative;
-  top: 5px;
-  height: 50px;
   color: var(--Sub-text);
+  position: relative;
+  top: 0.416rem;
+  height: 4.16rem;
 }
 
 /* Images */
-.pattern {
-  width: 700px;
-  height: 900px;
+.accordion .pattern {
   position: absolute;
-  top: -340px;
-  right: 360px;
+  top: -28.33rem;
+  right: 30rem;
+  width: 58.33rem;
+  height: 75rem;
 }
 
 .box {
-  width: 150px;
-  height: 150px;
   position: relative;
-  top: 295px;
-  left: 248px;
+  top: 24.58rem;
+  left: 20.66rem;
+  width: 12.5rem;
+  height: 12.5rem;
   z-index: 3;
 }
 
-.woman-online {
+.accordion .woman-online {
   position: absolute;
-  top: 30px;
-  right: 370px;
-  width: 430px;
-  height: 300px;
+  top: 2.5rem;
+  right: 30.83rem;
+  width: 35.83rem;
+  height: 25rem;
 }
 
 .mobile-img {
@@ -154,58 +155,69 @@ h1 {
   display: none;
 }
 
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  position: relative;
+  top: 37.5rem;
+}
+
+.attribution a {
+  color: hsl(0, 0%, 100%);
+}
+
 /* Media Queries */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 31.25em) {
+  h1 {
+    position: relative;
+    bottom: 0.833rem;
+    left: 6.66rem;
+  }
+
   .flex-container {
-    width: 200px;
-    min-width: 320px;
-    height: 520px;
     display: flex;
     justify-content: column;
     position: absolute;
-    left: 25px;
-    top: 150px;
+    left: 2.08rem;
+    top: 12.5rem;
+    min-width: 26.66rem;
+    width: 16.66rem;
+    height: 43.33rem;
   }
 
   .accordion {
-    width: 220px;
-    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 250px;
-    left: 40px;
+    top: 20.83rem;
+    left: 3.33rem;
+    width: 18.33rem;
+    height: 8.33rem;
   }
 
-  h1 {
+  .accordion .arrow {
     position: relative;
-    bottom: 10px;
-    left: 80px;
-  }
-
-  .arrow {
-    position: relative;
-    top: -2px;
+    top: -0.166rem;
+    left: 20rem;
     width: 5%;
-    left: 240px;
   }
 
   .mobile-img {
     display: block;
-    width: 250px;
-    height: 250px;
     position: absolute;
-    top: 5px;
-    left: 55px;
+    top: 0.416rem;
+    left: 4.58rem;
+    width: 20.83rem;
+    height: 20.83rem;
     z-index: 50;
   }
 
   .mobile-pattern {
     display: block;
+    width: 20.83rem;
+    height: 9.16rem;
     z-index: 6;
-    width: 250px;
-    height: 110px;
   }
 
   .box {
@@ -218,5 +230,27 @@ h1 {
 
   .pattern {
     display: none;
+  }
+
+  .attribution {
+    position: relative;
+    top: 61.66rem;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .flex-container {
+    position: absolute;
+    top: 13.33rem;
+  }
+
+  .box {
+    position: absolute;
+    top: 29.58rem;
+  }
+
+  .attribution {
+    position: relative;
+    top: 61.66rem;
   }
 }
