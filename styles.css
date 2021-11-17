@@ -176,7 +176,6 @@ h1 {
 
   .flex-container {
     display: flex;
-    justify-content: column;
     position: absolute;
     left: 2.08rem;
     top: 12.5rem;
