@@ -52,3 +52,7 @@ I want to be able to use more of Flexbox and grid for the CSS and to get a bette
 ### Useful resources
 
 - [Responsive FAQ accordion dropdown](https://www.youtube.com/watch?v=WB4qM9Umzss&list=PLM7UVNKcUioIFtGTKs19_uikSV-3WQe0Y&index=75&ab_channel=SamCodes) - This helped me for the FAQ accordion JavaScript section. I had already created the HTML and CSS, but was having trouble getting the accordion to work and this video helped me to understand what I needed to do.
+
+### Updated November 17th, 2021
+
+Fixed the FAQ accordion card size for the desktop 1440px.
