@@ -24,11 +24,12 @@
 
 html,
 body {
-  background-image: linear-gradient(var(--Soft-violet) 0%,
-      var(--Soft-blue) 100%);
+  background-image: linear-gradient(
+    var(--Soft-violet) 0%,
+    var(--Soft-blue) 100%
+  );
   color: var(--Main-text);
-  font-family: "Kumbh Sans",
-    sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   font-size: 12px;
   width: 100vw;
   height: 100vh;
@@ -74,11 +75,11 @@ h1 {
   cursor: pointer;
 }
 
-.active>.question {
+.active > .question {
   font-weight: bold;
 }
 
-.active>.question:hover {
+.active > .question:hover {
   color: var(--Secondary-text);
 }
 
@@ -109,11 +110,11 @@ h1 {
   display: none;
 }
 
-.question-answer__accordion>.answer {
+.question-answer__accordion > .answer {
   display: none;
 }
 
-.active>.answer {
+.active > .answer {
   display: block;
   color: var(--Sub-text);
   position: relative;
@@ -237,15 +238,39 @@ h1 {
   }
 }
 
-@media screen and (min-width: 120em) {
+@media screen and (min-width: 90em) {
   .flex-container {
     position: absolute;
     top: 13.33rem;
+    left: 20.83rem;
+    width: 83.33rem;
+    height: 37.5rem;
+  }
+
+  .accordion {
+    position: absolute;
+    left: 50rem;
   }
 
   .box {
     position: absolute;
-    top: 29.58rem;
+    top: 29.16rem;
+    left: 14.16rem;
+    width: 15.83rem;
+    height: auto;
+  }
+
+  .accordion .woman-online {
+    position: relative;
+    top: -22.5rem;
+    left: -57.5rem;
+    width: 50rem;
+    height: 29.16rem;
+  }
+
+  .pattern {
+    position: relative;
+    left: -66.66rem;
   }
 
   .attribution {
