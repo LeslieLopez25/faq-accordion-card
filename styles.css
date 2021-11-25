@@ -154,17 +154,6 @@ h1 {
   display: none;
 }
 
-.attribution {
-  font-size: 1rem;
-  text-align: center;
-  position: relative;
-  top: 37.5rem;
-}
-
-.attribution a {
-  color: hsl(0, 0%, 100%);
-}
-
 /* Media Queries */
 @media screen and (max-width: 31.25em) {
   h1 {
@@ -229,11 +218,6 @@ h1 {
   .pattern {
     display: none;
   }
-
-  .attribution {
-    position: relative;
-    top: 61.66rem;
-  }
 }
 
 @media screen and (min-width: 90em) {
@@ -277,10 +261,5 @@ h1 {
     position: absolute;
     top: -31.66rem;
     left: -68.75rem;
-  }
-
-  .attribution {
-    position: relative;
-    top: 61.66rem;
   }
 }
