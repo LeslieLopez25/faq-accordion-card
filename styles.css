@@ -17,6 +17,7 @@
 }
 
 * {
+  font-size: 12px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,13 +25,10 @@
 
 html,
 body {
-  background-image: linear-gradient(
-    var(--Soft-violet) 0%,
-    var(--Soft-blue) 100%
-  );
+  background-image: linear-gradient(var(--Soft-violet) 0%,
+      var(--Soft-blue) 100%);
   color: var(--Main-text);
   font-family: "Kumbh Sans", sans-serif;
-  font-size: 12px;
   width: 100vw;
   height: 100vh;
 }
@@ -63,27 +61,27 @@ h1 {
   height: 25rem;
 }
 
-.accordion .question {
+.question {
   color: var(--Secondary-text);
   position: relative;
   top: 1.66rem;
   padding: 0.666rem 0;
 }
 
-.accordion .question:hover {
+.question:hover {
   color: var(--Hover-text);
   cursor: pointer;
 }
 
-.active > .question {
+.active>.question {
   font-weight: bold;
 }
 
-.active > .question:hover {
+.active>.question:hover {
   color: var(--Secondary-text);
 }
 
-.accordion .arrow {
+.arrow {
   position: relative;
   top: 0.166rem;
   left: 22.5rem;
@@ -95,7 +93,7 @@ h1 {
   transform: rotate(180deg);
 }
 
-.accordion .divider {
+.divider {
   position: relative;
   top: 1.25rem;
   opacity: 0.2;
@@ -106,15 +104,15 @@ h1 {
   top: 5.41rem;
 }
 
-.accordion .answer {
+.answer {
   display: none;
 }
 
-.question-answer__accordion > .answer {
+.question-answer__accordion>.answer {
   display: none;
 }
 
-.active > .answer {
+.active>.answer {
   display: block;
   color: var(--Sub-text);
   position: relative;
@@ -123,7 +121,7 @@ h1 {
 }
 
 /* Images */
-.accordion .pattern {
+.pattern {
   position: absolute;
   top: -28.33rem;
   right: 30rem;
@@ -140,7 +138,7 @@ h1 {
   z-index: 3;
 }
 
-.accordion .woman-online {
+.woman-online {
   position: absolute;
   top: 2.5rem;
   right: 30.83rem;
@@ -241,36 +239,44 @@ h1 {
 @media screen and (min-width: 90em) {
   .flex-container {
     position: absolute;
-    top: 13.33rem;
+    top: 10rem;
     left: 20.83rem;
     width: 83.33rem;
-    height: 37.5rem;
+    height: 44.16rem;
   }
 
   .accordion {
     position: absolute;
+    top: 8.33rem;
     left: 50rem;
+  }
+
+  .accordion h1 {
+    font-size: 3rem;
+    position: relative;
+    bottom: 1.25rem;
   }
 
   .box {
     position: absolute;
-    top: 29.16rem;
-    left: 14.16rem;
+    top: 27.91rem;
+    left: 15rem;
     width: 15.83rem;
     height: auto;
   }
 
-  .accordion .woman-online {
-    position: relative;
-    top: -22.5rem;
+  .woman-online {
+    position: absolute;
+    top: -2.5rem;
     left: -57.5rem;
     width: 50rem;
-    height: 29.16rem;
+    height: 31.66rem;
   }
 
   .pattern {
-    position: relative;
-    left: -66.66rem;
+    position: absolute;
+    top: -31.66rem;
+    left: -68.75rem;
   }
 
   .attribution {

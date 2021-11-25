@@ -56,3 +56,7 @@ I want to be able to use more of Flexbox and grid for the CSS and to get a bette
 ### Updated November 17th, 2021
 
 Fixed the FAQ accordion card size for the desktop 1440px.
+
+### Updated November 24th, 2021
+
+Fixed issue with the container and images not being the right size for the screen size.
