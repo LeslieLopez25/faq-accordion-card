@@ -17,7 +17,6 @@
 }
 
 * {
-  font-size: 12px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,6 +30,7 @@ body {
   );
   color: var(--Main-text);
   font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
   width: 100vw;
   height: 100vh;
 }
@@ -157,6 +157,50 @@ h1 {
 }
 
 /* Media Queries */
+@media screen and (max-width: 120em) {
+  .flex-container {
+    position: absolute;
+    top: 10rem;
+    left: 20.83rem;
+    width: 83.33rem;
+    height: 44.16rem;
+  }
+
+  .accordion {
+    position: absolute;
+    top: 8.33rem;
+    left: 50rem;
+  }
+
+  .accordion h1 {
+    font-size: 3rem;
+    position: relative;
+    bottom: 1.25rem;
+  }
+
+  .box {
+    position: absolute;
+    top: 27.91rem;
+    left: 15rem;
+    width: 15.83rem;
+    height: auto;
+  }
+
+  .woman-online {
+    position: absolute;
+    top: -2.5rem;
+    left: -57.5rem;
+    width: 50rem;
+    height: 31.66rem;
+  }
+
+  .pattern {
+    position: absolute;
+    top: -31.66rem;
+    left: -68.75rem;
+  }
+}
+
 @media screen and (max-width: 31.25em) {
   h1 {
     position: relative;
@@ -219,49 +263,5 @@ h1 {
 
   .pattern {
     display: none;
-  }
-}
-
-@media screen and (min-width: 90em) {
-  .flex-container {
-    position: absolute;
-    top: 10rem;
-    left: 20.83rem;
-    width: 83.33rem;
-    height: 44.16rem;
-  }
-
-  .accordion {
-    position: absolute;
-    top: 8.33rem;
-    left: 50rem;
-  }
-
-  .accordion h1 {
-    font-size: 3rem;
-    position: relative;
-    bottom: 1.25rem;
-  }
-
-  .box {
-    position: absolute;
-    top: 27.91rem;
-    left: 15rem;
-    width: 15.83rem;
-    height: auto;
-  }
-
-  .woman-online {
-    position: absolute;
-    top: -2.5rem;
-    left: -57.5rem;
-    width: 50rem;
-    height: 31.66rem;
-  }
-
-  .pattern {
-    position: absolute;
-    top: -31.66rem;
-    left: -68.75rem;
   }
 }
