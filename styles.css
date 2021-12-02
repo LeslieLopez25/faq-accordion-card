@@ -157,7 +157,7 @@ h1 {
 }
 
 /* Media Queries */
-@media (max-width: 41.666em) {
+@media screen and (max-width: 41.666em) {
   h1 {
     position: relative;
     bottom: 0.833rem;
@@ -221,7 +221,7 @@ h1 {
   }
 }
 
-@media (min-width: 90em) and (max-width: 120em) {
+@media screen and (min-width: 90em) and (max-width: 120em) {
   .flex-container {
     position: absolute;
     top: 10rem;
